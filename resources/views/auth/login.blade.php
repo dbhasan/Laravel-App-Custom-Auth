@@ -11,7 +11,7 @@
                             <div class="d-flex justify-content-center py-4">
                                 <a href="#" class="logo d-flex align-items-center w-auto">
                                     <img src="backend/img/logo.png" alt="">
-                                    <span class="d-none d-lg-block">Pearl Light</span>
+                                    <span class="d-none d-lg-block">SOFTxONE Limited</span>
                                 </a>
                             </div>
                             <div class="card mb-3">

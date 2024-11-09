@@ -6,8 +6,8 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center">
-                <img src="{{ asset('backend/img/favicon.jpg') }}" alt="">
-                <span class="d-none d-lg-block">Pro Info Admin</span>
+                <img src="{{ asset('backend/img/') }}" alt="">
+                <span class="d-none d-lg-block">SOFTxONE Ltd</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div>
@@ -88,7 +88,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>Pro Info</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>SOFTxONE Limited/span></strong>. All Rights Reserved
         </div>
         <div class="credits">
             Designed by <a href="https://softxone.com/">SOFTxOne Limited</a>
