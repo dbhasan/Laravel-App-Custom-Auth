@@ -23,4 +23,10 @@
     <link href="{{ asset('backend/css/jquery.dataTables.css') }} " rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
     <link href="{{ asset('backend/css/style.css') }}" rel="stylesheet">
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++
+        Design and Development by Ali Hasan
+        Contact: 01723629080
+        SOFTxONE.COM
+        +++++++++++++++++++++++++++++++++++++++ -->
 </head>
