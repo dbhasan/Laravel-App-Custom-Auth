@@ -27,6 +27,6 @@
     <!-- +++++++++++++++++++++++++++++++++++++++++++
         Design and Development by Ali Hasan
         Contact: 01723629080
-        SOFTxONE.COM
+        softqry.com
         +++++++++++++++++++++++++++++++++++++++ -->
 </head>
