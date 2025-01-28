@@ -9,16 +9,15 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                             <div class="d-flex justify-content-center py-4">
-                                <a href="#" class="logo d-flex align-items-center w-auto">
-                                    <img src="backend/img/logo.png" alt="">
-                                    <span class="d-none d-lg-block">SOFTxONE Limited</span>
+                                <a href="#" class="d-flex align-items-center w-auto">
+                                    <img src="backend/img/logo.png" alt="" style="width: 90%; margin: auto;">
+                                    <span class="d-none d-lg-block"></span>
                                 </a>
                             </div>
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
+                                        <h5 class="card-title text-center pb-4 fs-1">Login</h5>
                                     </div>
                                     <form method="POST" action="{{ route('admin.login') }}" class="row g-3">
                                         @csrf
@@ -43,7 +42,7 @@
                                             <input type="password" class="form-control" id="password" name="password"
                                                 required>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-12 pb-4">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" name="remember"
                                                     value="true" id="rememberMe">

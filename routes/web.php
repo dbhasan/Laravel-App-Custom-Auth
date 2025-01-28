@@ -16,7 +16,7 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', function () {
-    return view('backend/dashboard');
+    return view('frontend.home');
 });
 
 

@@ -6,8 +6,8 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center">
-                <img src="{{ asset('backend/img/') }}" alt="">
-                <span class="d-none d-lg-block">SOFTxONE Ltd</span>
+                <img src="{{ asset('backend/img/logo.png') }}" alt="">
+                <span class="d-none d-lg-block"></span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div>
@@ -44,30 +44,9 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="">
-                    <i class="bi bi-images"></i>
-                    <span>Blog Post</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="">
-                    <i class="bi bi-gem"></i>
-                    <span>Lead Data</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="">
-                    <i class="bi bi-person-lines-fill"></i>
-                    <span>Contact Us</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
                 <a class="nav-link collapsed" href="{{ route('profle.update') }}">
                     <i class="bi bi-person"></i>
-                    <span>User Profile</span>
+                    <span>User's</span>
                 </a>
             </li>
 
@@ -88,10 +67,10 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>SOFTxONE Limited/span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>SOFT QUERY</strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Designed by <a href="https://softxone.com/">SOFTxOne Limited</a>
+            Designed by <a href="https://softqry.com/">softqry.com</a>
         </div>
     </footer>
     <!-- End Footer -->
