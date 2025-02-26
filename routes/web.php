@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PrintController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');
-});
+
+Route::get('/', [PrintController::class, 'printGet'])->name('print.get');
+Route::post('/', [PrintController::class, 'printPost'])->name('print.post');
 
 
 Route::get('/admin-login', [AuthController::class, 'login'])->name('login');
