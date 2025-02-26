@@ -19,6 +19,8 @@ use App\Http\Controllers\PrintController;
 
 Route::get('/', [PrintController::class, 'printGet'])->name('print.get');
 Route::post('/', [PrintController::class, 'printPost'])->name('print.post');
+Route::get('/{id}',[PrintController::class,'printData'])->name('print.data'); 
+
 
 
 Route::get('/admin-login', [AuthController::class, 'login'])->name('login');

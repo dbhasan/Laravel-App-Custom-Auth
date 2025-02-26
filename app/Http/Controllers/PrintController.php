@@ -24,14 +24,21 @@ class PrintController extends Controller
         ]);
 
         try {
-            $data = new PrintData();
-            $data->name = $request->name;
-            $data->phone = $request->phone;
-            $data->data = $request->data;
-            $data->save();
-            return redirect()->route('print.get')->with('success', 'Data created successfully.');
+            $order = new PrintData();
+            $order->name = $request->name;
+            $order->phone = $request->phone;
+            $order->data = $request->data;
+            $order->save();
+            return redirect()->route('print.data', $order->id)->with('success', 'Data created successfully.');
         } catch (\Exception $e) {
             return redirect()->route('print.get')->with('error', 'An error occurred. Please try again.');
         }
+    }
+
+    public function printData($id)
+    {
+        $order = PrintData::findOrFail($id);
+        // $qrCode = base64_encode(QrCode::format('png')->size(100)->generate($order->phone));
+        return view('frontend.print', compact('order'));
     }
 }
