@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\PrintController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +17,8 @@ use App\Http\Controllers\PrintController;
 */
 
 
-Route::get('/', [PrintController::class, 'printGet'])->name('print.get');
-Route::post('/', [PrintController::class, 'printPost'])->name('print.post');
-Route::get('/{id}',[PrintController::class,'printData'])->name('print.data'); 
 
-
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/admin-login', [AuthController::class, 'login'])->name('login');
 Route::post('/admin-login', [AuthController::class, 'adminlogin'])->name('admin.login');
