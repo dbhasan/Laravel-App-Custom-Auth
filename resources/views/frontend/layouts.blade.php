@@ -3,9 +3,9 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header>
+    {{-- <header>
         <h1>This is Header</h1>
-    </header>
+    </header> --}}
 
 
     {{-- ------------content part-------------- --}}
@@ -13,9 +13,9 @@
     {{-- ------------content part-------------- --}}
 
     <!-- ======= Footer ======= -->
-    <footer>
+    {{-- <footer>
         <h1>This is Footer</h1>
-    </footer>
+    </footer> --}}
 
     @include('frontend.footer');
 </body>

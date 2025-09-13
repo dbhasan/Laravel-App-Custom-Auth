@@ -16,7 +16,7 @@ class AuthController extends Controller
 {
     // Display the login form
     public function login() {
-        return view('auth.login');
+        return view('auth..login');
     }
     
     public function adminlogin(Request $request) {
@@ -44,30 +44,7 @@ class AuthController extends Controller
         return redirect()->route('login');
     }
 
-    // Display the Password Update
-    public function profileupdate() {
-        $users=Auth::user();
-        return view('auth.password', compact('users'));
-    }
 
-    public function passwordupdate(Request $request) {
-        $request->validate([
-            'old_password' => 'required',
-            'new_password' => 'required|confirmed',
-        ]);
-
-        // Match old password
-        if (!Hash::check($request->old_password, auth::user()->password)) {
-            return redirect()->route('profle.update')->with('error', 'Old password not match.');
-        }
-
-        // Update password
-        User::whereId(Auth::user()->id)->update([
-            'password' => Hash::make($request->new_password)
-        ]);
-
-        return redirect()->route('profle.update')->with('success', 'Password updated successfully.');
-    }
 
 }
 

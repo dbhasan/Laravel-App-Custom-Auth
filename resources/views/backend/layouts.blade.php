@@ -37,21 +37,59 @@
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
-                <a class="nav-link collapsed" href="">
+                <a class="nav-link collapsed" href="{{ route('dashboard') }}">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('profle.update') }}">
-                    <i class="bi bi-person"></i>
+                <a class="nav-link"
+                    data-bs-target="#role-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-database-lock"></i><span>Role Setting</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="role-nav"
+                    class="nav-content collapse {{ request()->routeIs('index.role', 'index.right', 'get.role.for.right') ? 'show' : '' }}"
+                    data-bs-parent="#sidebar-nav">
+
+                    <li>
+                        <a href="{{ route('index.role') }}"
+                            class="{{ request()->routeIs('index.role') ? 'active' : '' }}">
+                            <i class="bi bi-circle"></i><span>Role</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('index.right') }}"
+                            class="{{ request()->routeIs('index.right') ? 'active' : '' }}">
+                            <i class="bi bi-circle"></i><span>Right</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('get.role.for.right') }}"
+                            class="{{ request()->routeIs('get.role.for.right') ? 'active' : '' }}">
+                            <i class="bi bi-circle"></i><span>Role-Right</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{ route('index.user') }}">
+                    <i class="bi bi-people"></i>
                     <span>User's</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('profle.update')}}">
+                    <i class="bi bi-shield-lock"></i>
+                    <span>Password</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('logout') }}">
+                <a class="nav-link collapsed" href="{{route('logout')}}">
                     <i class="bi bi-box-arrow-in-right"></i>
                     <span>Logout</span>
                 </a>
